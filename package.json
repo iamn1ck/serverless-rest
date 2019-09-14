@@ -1,0 +1,10 @@
+{
+  "name": "serverless-rest",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless": "1.52.0",
+    "serverless-offline": "5.11.0"
+  }
+}

@@ -1,0 +1,22 @@
+service: lambdaService
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: us-east-1
+  memorySize: 512
+
+package:
+  excludeDevDependencies: false
+
+functions:
+  index-get:
+    description: Returns html
+    memorySize: 1024
+    timeout: 10
+    handler: src/handlers/index-get.default
+    events:
+      - http:
+          path: /
+          method: GET
